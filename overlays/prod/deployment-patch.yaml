@@ -1,0 +1,11 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front
+spec:
+  template:
+    spec:
+      containers:
+        - name: main
+          image: nginx:mainline-alpine3.20
